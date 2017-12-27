@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+/*背景的设置的开始*/
+html{
+	height:100%;
+}
+body
+{ 
+  background-image:url(../image/backgroundimage.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+}
+/*背景的设置的结束*/
+
+
+/*h1标题的设置开始*/
+h1{
+	color: white;
+}
+/*h1标题的设置结束*/
+/*h2标题的设置开始*/
+ h2.about{
+ 	font-family:Arial,Verdana,Sans-serif;
+ 	position:relative;
+ 	color: white;
+ }
+/*h2标题的设置结束*/
+/*contack设置*/
+h2.contact{
+	font-size:3em;
+	color: white;
+}
+/*footer 的设置开始*/
+ h6.footer{
+ 	font-family:Arial,Verdana,Sans-serif;
+ 	position:relative;
+ 	color: white;
+ }
+/*footer 设置的结束*/
+/*按钮的设置开始*/
+ li.button{
+ 	font-family:Arial,Verdana,Sans-serif;
+ 	position:relative;
+ }
+/*按钮的设置结束*/
+/*开始的导航栏设置*/
+ * {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            #nav {
+                width: 60%;
+                background-color:rgba(244,16,19,0.70);
+                height: 40px;
+                /*border-radius: 10px;*/
+                position: relative;
+                margin-top:7%;
+                margin-left:22%;
+            }
+            
+            .nav-container {
+                width: 100%;
+                height: 40px;
+                position: absolute;
+            }
+            
+            .banner {
+                float: left;
+                text-align: center;
+                height: 40px;
+                width: 25%;
+                line-height: 40px;
+				color:aliceblue;
+            }
+            
+            .banner:hover {
+                background-color:rgba(252,106,108,1.00);
+                cursor: pointer;
+				color: aliceblue;
+            }
+            
+            div ul {
+                list-style: none;
+                /*display: none;*/
+                background-color:white;
+                overflow: hidden;
+                /*模拟height:auto时候的情况*/                
+                max-height: 0px;
+                transition: max-height 1.3s;
+                /*多浏览器支持*/
+                -moz-transition: height 1s;
+                -webkit-transition: height 1s;
+                -o-transition: height 1s;
+            }
+            
+            .banner:hover ul {
+                /*display: block;*/
+                width: 100%;
+                max-height: 160px;
+            }
+            
+            div ul li {
+                overflow: hidden;
+            }
+            
+            div ul li:hover {
+                background-color: #D3D3D3;
+            }
+  /*导航栏的设置结束*/
+
+/*footer 的设置开始*/
+p1{
+	color: white;
+}
+/*footer 的设置结束*/
+
+

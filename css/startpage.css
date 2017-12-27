@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  background: #3E4777;
+  overflow: hidden;
+  margin: 0;
+}
+
+.instructions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  color: white;
+}
+h1{
+	font-size: 1em;
+	text-align: center;
+    color: white;
+}
