@@ -2,19 +2,58 @@
 <html>
 <head>
 	<!--icon-->
-	<link type="image/x-icon" rel="shortcut icon" href="../icon/icon.ico" />
+	<link type="image/x-icon" rel="shortcut icon" href="icon.ico" />
 	<!--css-->
-	<link href="../css/index css.css" rel="stylesheet" type="text/css">
+	<link href="index css.css" rel="stylesheet" type="text/css">
 	<!--title-->
-	<title>contactpage</title>
+	<title>homepage</title>
 	<!--snow script-->
-    <script src="../js/snowflake.js"></script>
+    <script src="snowflake.js"></script>
 	<script>
 		createSnow('', 200);
 	</script>
+	<script type="text/javascript">
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+{ 
+c_start=document.cookie.indexOf(c_name + "=")
+if (c_start!=-1)
+{ 
+c_start=c_start + c_name.length+1 
+c_end=document.cookie.indexOf(";",c_start)
+if (c_end==-1) c_end=document.cookie.length
+return unescape(document.cookie.substring(c_start,c_end))
+} 
+}
+return ""
+}
+
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date()
+exdate.setDate(exdate.getDate()+expiredays)
+document.cookie=c_name+ "=" +escape(value)+
+((expiredays==null) ? "" : "; expires="+exdate.toGMTString())
+}
+
+function checkCookie()
+{
+username=getCookie('username')
+if (username!=null && username!="")
+  {alert('Welcome again '+username+'!')}
+else 
+  {
+  username=prompt('Please enter your name:',"")
+  if (username!=null && username!="")
+    {
+    setCookie('username',username,365)
+    }
+  }
+}
+</script>
 </head>
-<body>
-	<embed     src="../music/Jingle Bell.mp3"     width="0" height="0"></embed>
+<body onLoad="checkCookie()">
 	<!--h1标题设置-->
 	<h1 align="center" style="
 							  color: red;
@@ -50,13 +89,14 @@
                 </div>
           </div>
 </div>
+	
 <!--导航栏结束-->
 <br><br><br><br>
 <!--边框和内容-->
 <table border=0 bordercolor=red width=98% align=center>
 <tr>
 <td width=20% align=center >
-<a href="index.html"><img width=50% height=20% src="../image/logo.png" ></a>
+	<a href="index.html"><img width=50% height=20% src="logo.png" ></a>
 </td>
 <td width=80% align=center colspan=2>
 </td>
@@ -64,35 +104,29 @@
 
 <tr>
 <td width=20% align=center>
-<!--firework-->
+
 	<br><br><br><br><br><br><br><br><br><br><br>
-	
+	<img height=200 width=200 src="bell.png">
 
 <br><br><br><br><br><br><br><br><br><br><br>
 	
 </td>
 
 <td width=60% align=center >
-	<h2 class="contact">
-		<!--center-->
-        How to contact us?
-		<br>
-		Don't worry!
-		<br>
-		email:12345678@qq.com
-		<br>
-		phone:12345678
-	</h2>
+<img height=400 width=600 src="homegif.gif">
 </td>
 <td width=20% align=center>
 <!--bell-->
-	<img height=200 width=200 src="../image/bell.png">
+	<img height=200 width=200 src="bell.png">
 </td>
 </tr>
 
 <tr>
 <td align=center colspan=3> <br>
-<h6 class="footer">Copyright @2017 Ultra-Leo Inc. All rights reserved.</h6>
+<h6 class="footer">Copyright @2017 Ultra-Leo Inc. All rights reserved.<a href="contactpage.html">contact</a></h6>
+	<!--button-->
+	<embed     src="Jingle Bell.mp3"     width="0" height="0"></embed>
+
 <br>
 </td>
 </tr>
